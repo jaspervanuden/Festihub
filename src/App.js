@@ -1,5 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
+import "./config/firebase";
+
+import {getDocs, collection, doc} from 'firebase/firestone';
+import { db } from '../firebase-config';
 
 function App() {
   return (
@@ -24,3 +28,8 @@ function App() {
 }
 
 export default App;
+
+console.log(
+  const [getTaskList, setTaskList] = useState([]);
+  const jobCollectionRef = collection( )
+);
