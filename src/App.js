@@ -1,5 +1,4 @@
 import "./App.css";
-import "./config/firebase";
 import Signup from "./componments/Signup";
 
 // import React, { useEffect, useState } from "react";
@@ -18,15 +17,12 @@ import Signup from "./componments/Signup";
 //     getTasks();
 //   },[])
 
-
 function App() {
   return (
-    <div>
-        <Signup />
+    <div className="App">
+      <Signup />
     </div>
   );
 }
 
 export default App;
-
-
