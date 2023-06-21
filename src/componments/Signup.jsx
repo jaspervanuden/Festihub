@@ -30,48 +30,48 @@ const Signup = () => {
 
   return (
     <div className="Signup">
-    <main>
-      <section>
-        <div>
+      <main>
+        <section>
           <div>
-            <h1> FocusApp </h1>
-            <form>
-              <div>
-                <label htmlFor="email-address">Email address</label>
-                <input
-                  type="email"
-                  label="Email address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  placeholder="Email address"
-                />
-              </div>
+            <div>
+              <h1> FocusApp </h1>
+              <form>
+                <div>
+                  <label htmlFor="email-address">Email address</label>
+                  <input
+                    type="email"
+                    label="Email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    placeholder="Email address"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="password">Password</label>
-                <input
-                  type="password"
-                  label="Create password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                  placeholder="Password"
-                />
-              </div>
+                <div>
+                  <label htmlFor="password">Password</label>
+                  <input
+                    type="password"
+                    label="Create password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                    placeholder="Password"
+                  />
+                </div>
 
-              <button type="submit" onClick={onSubmit}>
-                Sign up
-              </button>
-            </form>
+                <button type="submit" onClick={onSubmit}>
+                  Sign up
+                </button>
+              </form>
 
-            <p>
-              Already have an account? <NavLink to="/login">Sign in</NavLink>
-            </p>
+              <p>
+                Already have an account? <NavLink to="/login">Sign in</NavLink>
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
     </div>
   );
 };
